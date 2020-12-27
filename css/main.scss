@@ -1,0 +1,27 @@
+$body-white:#ffff;
+$body-dark:#1E202A;
+$weight1:400;
+$weight2:700;
+$fontsize:14px;
+body {
+    .dark-mode{
+        background-color:$body-dark !important;
+    }
+    .header{
+        padding:20px 20px;
+    }
+    .title{
+        font-weight:$weight1;
+        color:#000;
+        font-family:$fontsize;
+    }
+    .container{
+        .row{
+            .col-sm{
+                height:200px;
+                text-align:center;
+                background-color:#f0f3fa;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+body .dark-mode {
+  background-color: #1E202A !important;
+}
+body .header {
+  padding: 20px 20px;
+}
+body .title {
+  font-weight: 400;
+  color: #000;
+  font-family: 14px;
+}
+body .container .row .col-sm {
+  height: 200px;
+  text-align: center;
+  background-color: #f0f3fa;
+}
+
+/*# sourceMappingURL=main.css.map */
