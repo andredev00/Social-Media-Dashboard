@@ -1,26 +1,68 @@
-$body-white:#ffff;
-$body-dark:#1E202A;
-$weight1:400;
-$weight2:700;
-$fontsize:14px;
+$body-white: #ffff;
+$body-dark: #1e202a;
+$weight1: 400;
+$weight2: 700;
+$fontsize: 14px;
+$cardsbackground: #f0f3fa;
 body {
-    .dark-mode{
-        background-color:$body-dark !important;
+    .dark-mode {
+        background-color: $body-dark !important;
     }
-    .header{
-        padding:20px 20px;
+    header {
+        padding: 25px 25px;
     }
-    .title{
-        font-weight:$weight1;
-        color:#000;
-        font-family:$fontsize;
+    .title {
+        font-weight: $weight1;
+        color: #000;
+        font-family: $fontsize;
     }
-    .container{
-        .row{
-            .col-sm{
-                height:200px;
-                text-align:center;
-                background-color:#f0f3fa;
+    .container {
+        .row {
+            .col-sm {
+                height: 200px;
+                text-align: center;
+                background-color: $cardsbackground;
+                padding: 15px 15px;
+                margin-right:30px;
+            }
+        }
+    }
+
+    .container.overview {
+        .row.overview {
+            display: grid;
+            width: 1100px;
+            grid-template-columns: repeat(auto-fit,minmax(221px,1fr));
+            margin: 0 auto;
+            .col {
+                height: 150px;
+                background-color: $cardsbackground;
+                padding: 5px 20px;
+                margin: 10px;
+                .header {
+                    display: flex;
+                    height: 95px;
+                    justify-content: space-between;
+                    .title {
+                        width: 75%;
+                    }
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        position: relative;
+                        top: 7px;
+                    }
+                }
+                .text {
+                    display: flex;
+                    justify-content: space-between;
+                    .numbers_gain {
+                        font-size: 28px;
+                    }
+                    .percentage{
+                        font-size:19px;
+                    }
+                }
             }
         }
     }

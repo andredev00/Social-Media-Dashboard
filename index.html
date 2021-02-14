@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,11 +21,10 @@
 </head>
 
 <body>
-<header>
   <!--<button class="btn btn-primary" type="button" onclick="toggleDemo()">Click me!</button>-->
     <h2 class="title">Social Media Dashboard</h2>
-    <p class="total_followers">Total Followers: 23,004</p>
-
+    <p class="total_followers">Total Followers: </p>
+    <a id="#subCount"></a>
   <p class="switch-mode">Dark Mode</p>
 
   
@@ -38,20 +37,20 @@
       <p>12 Today</p>
 </div>
 
-<div class="col-sm">
+<div style="border-top:solid #1CA0F2 " class="col-sm">
   <p><img class="twitter_img" src="images/icon-twitter.svg">@nathanf</p>
   <p>1044</p>
   <p>Followers</p>
   <p>99 Today</p>
 </div>
 
-<div class="col-sm">
+<div style="border-top:solid " class="col-sm">
   <p><img class="instagram_img" src="images/icon-instagram.svg">@realnathanf</p>
   <p>11k</p>
   <p>Followers</p>
   <p>1099 Today</p>
 </div>
-<div class="col-sm">
+<div style="border-top:solid #C4032A"class="col-sm">
   <p><img class="youtube_img" src="images/icon-youtube.svg">Nathan F.</p>
   <p>8239</p>
   <p>Subscribers</p>
@@ -59,58 +58,94 @@
 </div>
   </div>
 </div>
-
-
-</header>
-
-
   <h2>Overview - Today</h2>
+  <div class="container overview">
+      <div class="row">
+          <div class="col">
+              <div class="header">
+                  <p class="title">Page Views</p>
+                  <img class="facebook_img" src="images/icon-facebook.svg">
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">87</label>
+                  <label class="percentage">3%</label>
+              </div>
+          </div>
+          <div class="col">
+              <div class="header">
+                  <p class="title">Likes</p>
+                  <img class="facebook_img" src="images/icon-facebook.svg">
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">52</label>
+                  <label class="percentage">2%</label>
+              </div>
+          </div>
+          <div class="col">
+              <div class="header">
+                  <p class="title">Likes</p>
+                  <img class="instagram_img" src="images/icon-instagram.svg" />
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">5462</label>
+                  <label class="percentage">2257%</label>
+              </div>
+          </div>
+          <div class="col">
+              <div class="header">
+                  <p class="title">Profile Views</p>
+                  <img class="instagram_img" src="images/icon-instagram.svg" />
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">52k</label>
+                  <label class="percentage">1375%</label>
+              </div>
+          </div>
 
-
-<div class="container overview">
-  <div class="row overview">
-    <div class="col">
-  Page Views
-  87
-  3%
-</div>
-  <div class="col">
-  Likes
-  52
-  2%
-</div>
-  <div class="col">
-  Likes
-  5462
-  2257%
-</div>
-  <div class="col">
-  Profile Views
-  52k
-  1375%
-</div>
-  <div class="col">
-  Retweets
-  117
-  303%
-</div>
-  <div class="col">
-  Likes
-  507
-  553%
-</div>
-  <div class="col">
-  Likes
-  107
-  19%
-</div>
-  <div class="col">
-  Total Views
-  1407
-  12%
-</div>
-</div>
-</div>
+          <div class="row">
+          </div>
+          <div class="col">
+              <div class="header">
+                  <p class="title">Retweets</p>
+                  <img class="twitter_img" src="images/icon-twitter.svg" />
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">117</label>
+                  <label class="percentage">303%</label>
+              </div>
+          </div>
+          <div class="col">
+              <div class="header">
+                  <p class="title">Likes</p>
+                  <img class="twitter_img" src="images/icon-twitter.svg" />
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">507</label>
+                  <label class="percentage">553%</label>
+              </div>
+          </div>
+          <div class="col">
+              <div class="header">
+                  <p class="title">Likes</p>
+                  <img class="youtube_img" src="images/icon-youtube.svg" />
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">107</label>
+                  <label class="percentage">19%</label>
+              </div>
+          </div>
+          <div class="col">
+              <div class="header">
+                  <p class="title">Total Views</p>
+                  <img class="youtube_img" src="images/icon-youtube.svg" />
+              </div>
+              <div class="text">
+                  <label class="numbers_gain">1407</label>
+                  <label class="percentage">12%</label>
+              </div>
+          </div>
+      </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">André Filipe Ferreira</a>.

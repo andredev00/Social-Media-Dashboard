@@ -1,8 +1,8 @@
 body .dark-mode {
-  background-color: #1E202A !important;
+  background-color: #1e202a !important;
 }
-body .header {
-  padding: 20px 20px;
+body header {
+  padding: 25px 25px;
 }
 body .title {
   font-weight: 400;
@@ -13,6 +13,44 @@ body .container .row .col-sm {
   height: 200px;
   text-align: center;
   background-color: #f0f3fa;
+  padding: 15px 15px;
+  margin-right: 30px;
+}
+body .container.overview .row.overview {
+  display: grid;
+  width: 1100px;
+  grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
+  margin: 0 auto;
+}
+body .container.overview .row.overview .col {
+  height: 150px;
+  background-color: #f0f3fa;
+  padding: 5px 20px;
+  margin: 10px;
+}
+body .container.overview .row.overview .col .header {
+  display: flex;
+  height: 95px;
+  justify-content: space-between;
+}
+body .container.overview .row.overview .col .header .title {
+  width: 75%;
+}
+body .container.overview .row.overview .col .header img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 7px;
+}
+body .container.overview .row.overview .col .text {
+  display: flex;
+  justify-content: space-between;
+}
+body .container.overview .row.overview .col .text .numbers_gain {
+  font-size: 28px;
+}
+body .container.overview .row.overview .col .text .percentage {
+  font-size: 19px;
 }
 
 /*# sourceMappingURL=main.css.map */
